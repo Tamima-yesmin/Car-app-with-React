@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import '../SignIn.css'
 
 export default function SignIn() {
     const [user, setUser] = useState({ name: '', email: '', password: '' })

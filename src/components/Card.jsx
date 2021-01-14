@@ -1,9 +1,12 @@
 import React, { useState } from 'react'
 
 
+
+
 export default function Card(props) {
     const { titleText, descText, img } = props;
-    const [item, setitem] = useState([])
+    const Data = props;
+    // const [item, setitem] = useState([])
     const [cart, setcart] = useState([]);
 
     const addToCart = (item) => {
@@ -20,7 +23,7 @@ export default function Card(props) {
                 <p className="cardDes"> {descText}</p>
 
                 <button className="btn btn-success"
-                    onClick={() => addToCart(item)}>Add</button>
+                    onClick={() => addToCart(Data)}>Add</button>
             </div>
         </>
     )

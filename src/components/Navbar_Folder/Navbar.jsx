@@ -1,9 +1,14 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
+import '../Navbar.css'
 import navPic from '../Navbar_Folder/NavImages/logo.png';
+import { useStateValue } from '../../StateProvider'
 
 
 export default function Navbar() {
+    const [{ cart }] = useStateValue();
+
+    console.log(cart);
 
 
     // const burger = document.querySelector('.burger');
@@ -17,7 +22,7 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className="navbar  navbar-expand-lg  ">
+            <nav className="navbar sticky-nav navbar-expand-sm  ">
                 {/* <div className="burger  ">
                     <div className="line1"></div>
                     <div className="line2"></div>
@@ -33,10 +38,15 @@ export default function Navbar() {
                 </NavLink>
                 <ul className=" navbar-nav ml-auto">
                     <li className="nav-item ">
-                        <NavLink class="nav-link" to="#"><i class="fas fa-search  rounded-circle"></i> </NavLink>
+
+
+                        <NavLink class="nav-link" to="#"><input type="search" className=" search-input" ></input> <i class="fas fa-search  rounded-circle"></i> </NavLink>
+
                     </li>
                     <li className="nav-item">
-                        <NavLink className="nav-link" to="#"> <i class="fas fa-shopping-cart rounded-circle"></i> </NavLink>
+                        <NavLink className="nav-link" to="/cart"> <i class="fas fa-shopping-cart rounded-circle"></i>
+                            <span>{cart?.length}</span>
+                        </NavLink>
                     </li>
                     <li className="nav-item">
                         <NavLink className="nav-link" to="/signin"> <i class="far fa-user-circle rounded-circle"></i> </NavLink>

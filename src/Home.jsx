@@ -1,6 +1,9 @@
 import React from 'react'
-import Card from './components/Card'
-import Data from './Data.json'
+import './App.css'
+import Data from './components/Product_Folder/data.json'
+import Product from './components/Product_Folder/Product'
+
+
 
 export default function Home() {
     return (
@@ -19,7 +22,8 @@ export default function Home() {
 
             </section>
 
-            {Data.map((item, index) => <Card Key={index} titleText={item.title} descText={item.des} img={item.img} />)}
+            {/* //-------------------produc call ---------------------------- */}
+            {Data.map((item, index) => <Product Key={index} titleText={item.title} descText={item.des} img={item.img} id={item.id} />)}
         </>
     )
 }

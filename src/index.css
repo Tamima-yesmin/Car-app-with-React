@@ -6,7 +6,7 @@
 
 /* --------navbar start here -------------- */
 
-.navbar{
+/* .navbar{
     background-color:rgb(255, 255, 255);
    
     text-decoration:none;
@@ -43,10 +43,16 @@
     
 }
 
-.menu-active{
+.search-input{
+    border: none;
+} */
+    /* border-bottom: 2px solid ; */
+
+
+/* .menu-active{
     color:teal;
     font-weight:bold;
-}
+} */
 
 /* .burger{
     display:none;
@@ -63,7 +69,7 @@
 
 /* --------navbar end here -------------- */
 
-#header{
+/* #header{
     background-image: url("Images/headerImg.png");
     background-size: cover;
     background-size: center;
@@ -76,11 +82,11 @@
     margin-top: 130px;
     background-color: rgb(255, 255, 255);
     opacity: 0.7;
-}
+} */
 
 /* --------------signin start here-------------- */
 
-#signIn {
+/* #signIn {
     
     
     border: outset;
@@ -94,32 +100,34 @@
 }
 
 #signIn i{
-    /* background-color:#e3fcf8; */
+    
     background-image: linear-gradient(to right,#8ad7c1,#c6fced,#f0faf7 ) ;
     padding: 14px;
     font-size: 3rem;
-   
+}  */
+/* background-color:#e3fcf8; */
     
 
-}
 
-#signIn .input{
+
+/* #signIn .input{
     background-color: rgb(241, 238, 238);
     border-color: rgb(207, 207, 207);
     border: outset;
+}
     /* margin: 10px 30px;
     width:200px; */
     /* height: 80px; */
      
-}
 
 
 
-#signIn .btn{
+
+/* #signIn .btn{
     padding: 10px 40px;
     margin:10px 70px;
     background-image: linear-gradient(to right,#8ad7c1,#c6fced,#f0faf7 ) ;
-}
+} */ */
 
 
 /* --------------signin end here-------------- */
